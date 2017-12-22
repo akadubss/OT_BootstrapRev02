@@ -216,10 +216,12 @@ p1 {
 }
 
 .navbar-brand {
+    font-family: 'Yoga Flame';
+    font-size:2em;
     float: left;
     min-height: 55px;
-    padding: 0 15px 5px;
-    z-index: 9999;
+    padding: 0 3px 3px;
+    z-index: ;
 }
 
 .navbar-inverse .navbar-nav .active a,
@@ -340,7 +342,7 @@ nav {
 
 /*Parallax Scene #1*/
 
-.bgc-parallax{
+.bgc-parallax {
     padding-top: 40em;
     color: #fff;
     background-color: #0000;
@@ -365,13 +367,13 @@ nav {
 /*Parallax Scene #1 Media Queries*/
 
 @media (max-width: 600px) {
-    .aaron-port {
+    .bgc-parallax {
         padding-top: 20em;
     }
 }
 
 @media (max-width: 1000px) {
-    .aaron-port {
+    .bgc-parallax {
         padding-top: 30em;
     }
 }
