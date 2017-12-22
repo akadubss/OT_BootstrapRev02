@@ -1,0 +1,378 @@
+@font-face {
+    font-family: 'BebasNeueBook';
+    src: url('../font/bebas-neue-book/BebasNeueBook.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../font/bebas_neue/BebasNeue.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Rage Italic';
+    src: url('../font/Rage Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Yoga Flame';
+    src: url('../font/YogaFlame/HYogaFlame-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: #0F0F0F;
+}
+
+
+/* typography*/
+
+h1 {
+    font-family: 'Yoga Flame';
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+p1 {
+    font-family: 'BebasNeue';
+    color: white;
+}
+
+.boldO {
+    font-family: 'Yoga Flame';
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+    .boldO {
+    font-size:1em;    
+    
+    }
+}
+
+@media (max-width: 1000px) {
+
+}
+
+.MissionStatement {
+    font-family: 'BebasNeueBook';
+    font-size: 2em;
+    line-height: 1.2;
+    padding: 2em;
+    padding-left: 10em;
+    padding-right: 10em;
+    z-index: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+
+.aboutTitle {
+    position: relative;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translate(0, 50%);
+    -ms-transform: translate(0, 50%);
+    transform: translate(0, 50%);
+    color: white;
+}
+
+.quotes {
+    font-family: 'BebasNeueBook';
+    font-size: 2em;
+}
+
+.Testimonials {
+    padding-bottom: 2em;
+}
+
+.personQuote {
+    display: block;
+}
+
+.block {
+    display: block;
+}
+
+.quotes {
+    display: block;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .MissionStatement {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .MissionStatement {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.super-heading {
+    font-size: 70px;
+}
+
+.super-paragraph {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.carousel-caption .super-paragraph a,
+.carousel-caption .super-paragraph a:hover {
+    color: #fff;
+}
+
+#carousel-example-generic {
+    margin: 40px 0;
+}
+
+.demo-content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+/* original solution by https://codepen.io/Rowno/pen/Afykb */
+
+.carousel-fade .carousel-inner .item {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+}
+
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+
+/* carousel fullscreen */
+
+.carousel-fullscreen .carousel-inner .item {
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* carousel fullscreen - vertically centered caption*/
+
+.carousel-fullscreen .carousel-caption {
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.3;
+    transition: all 0.2s ease-out;
+}
+
+
+/* Nav Bar should stay static on the top of screen after the Carosel passes */
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #0F0F0F;
+    color: #FFF;
+    padding: 1% 0;
+    font-size: 1.2em;
+    border: 0;
+    z-index: 999;
+}
+
+.navbar-brand {
+    float: left;
+    min-height: 55px;
+    padding: 0 15px 5px;
+    z-index: 9999;
+}
+
+.navbar-inverse .navbar-nav .active a,
+.navbar-inverse .navbar-nav .active a:focus,
+.navbar-inverse .navbar-nav .active a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.navbar-inverse .navbar-nav li a {
+    color: #D5D5D5;
+}
+
+.container-fluid {
+    margin: 7% auto;
+}
+
+nav {
+    background: rgba(0, 0, 0, .35);
+    position: relative;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    margin-bottom: -50px;
+    padding: 5px 0;
+    transition: box-shadow 0.5s ease;
+}
+
+.navScrolled {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 1px 5px #000;
+    margin-bottom: 3%;
+}
+
+.container-fluid {
+    margin-top: 2% auto;
+}
+
+
+/*Parallax Scene #1*/
+
+.aaron-port {
+    padding-top: 40em;
+    color: #fff;
+    background-color: #0000;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 100% 0;
+}
+
+.aaron_img {
+    background: url(../img/Dyna_2.jpg) no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 185%;
+    top: 0;
+    z-index: 0;
+    opacity: 0.7;
+}
+
+
+/*Parallax Scene #1 Media Queries*/
+
+@media (max-width: 600px) {
+    .aaron-port {
+        padding-top: 20em;
+    }
+}
+
+@media (max-width: 1000px) {
+    .aaron-port {
+        padding-top: 30em;
+    }
+}
+
+
+/*Trainer Modal Pop Up*/
+
+.modal-content {
+    background-color: #0F0F0F;
+}
+
+.modal-footer {
+    border-top: 0;
+}
+
+.close {
+    color: #fff;
+}
+
+.modal-title {
+    font-family: 'BebasNeue';
+    letter-spacing: 2px;
+}
+
+#about-aaron {
+    font-family: 'BebasNeue';
+    letter-spacing: 2px;
+    color: #fff;
+    font-size:1.5em;
+}
+
+#Aaron_img {
+    padding-top: 5em;
+}
+
+
+
+/* cards and trainers*/
+.card {
+    
+    border: 1px solid #fff ;
+}
+
+/*Parallax Scene #1*/
+
+.bgc-parallax{
+    padding-top: 40em;
+    color: #fff;
+    background-color: #0000;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 100% 0;
+}
+
+.bgc {
+    background: url(../img/Dyna.jpg) no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 185%;
+    top: 0;
+    z-index: 0;
+    opacity: 0.7;
+}
+
+
+/*Parallax Scene #1 Media Queries*/
+
+@media (max-width: 600px) {
+    .aaron-port {
+        padding-top: 20em;
+    }
+}
+
+@media (max-width: 1000px) {
+    .aaron-port {
+        padding-top: 30em;
+    }
+}
+
