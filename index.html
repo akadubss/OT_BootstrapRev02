@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!---Bootstrap4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap-flex.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
     <!--- Main CSS -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
 
@@ -126,26 +133,32 @@
     </div>
 
     <!----The trainers---->
- <div class="container-fluid">
-<div class="row">
-    <div class="title text-center">
-        <h2 class="Testimonials"><span class="boldO">Meet the Trainer</span></h2>
-    </div>
-    <div class="col-xs-12 col-md-6">
-      <!-- Card -->
-      <div class="card animated fadeInLeft  border-white">
-        <img class="card-img-top img-responsive" src="img/Aaron_cage_2.jpg" alt="Deer in nature" />
-        <div class="card-block">
-          <h4 class="card-title text-center">Meet the Trainer</h4>
-          <h6 class="text-muted text-center">Aaron Smith</h6>
-<!-- Trigger the modal with a button -->
-        <button type="button" class="btn  btn-lg center-block" data-toggle="modal" data-target="#myModal">Biography</button>
+    <div class="container-fluid">
+
+        <div class="title text-center">
+            <h2 class="Testimonials"><span class="boldO">Meet the Trainer</span></h2>
         </div>
-      </div><!-- .end Card -->
+        
+           
+           <div class="row flex-items-xs-middle flex-items-xs-center">
+            <div class="col-sm-12 col-md-4 center-block ">
+                <!-- Card -->
+                <div class="card animated fadeInLeft  border-white text-xs-center">
+                    <img class="card-img-top img-responsive center-block" src="img/Aaron_cage_2.jpg" alt="Deer in nature" />
+                    <div class="card-block border-white">
+                        <h4 id="Card-Header" class="card-title text-center">Meet the Trainer</h4>
+                        <h6 id="Card-Text" class="text-muted text-center">Aaron Smith</h6>
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn  btn-lg center-block" data-toggle="modal" data-target="#myModal">Biography</button>
+                    </div>
+                </div>
+                 <!-- .end Card -->
+            </div>
+           
+        </div>
+
     </div>
-      </div>
-      </div>   
-    
+
     <!-- Modal Starts -->
     <div class="container">
 
@@ -162,7 +175,7 @@
                     <div class="modal-body">
                         <div class="row">
                             <div id="Aaron_img" class="col-sm-6 "> <img src="img/Aaron_Hero.jpg" class="img-responsive">
-</div>
+                            </div>
                             <div id="about-aaron" class="col-sm-6  ">
                                 <h4 class="text-center">Aaron Smith</h4>
                                 <h4 class="text-center">Fitness Coach</h4>
@@ -171,15 +184,14 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-gradient mt-2" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 
-        <!----Parllax Filler---->
+    <!----Parllax Filler---->
 
 
     <div class="bgc-parallax">
@@ -187,6 +199,105 @@
         <div class="content-wrap"></div>
     </div>
 
+
+
+
+    <!----Pricing Plans---->
+
+    <div class="container-fluid">
+               <div class="title text-center">
+            <h2 class="Testimonials"><span class="boldO">What We Offer</span></h2>
+        </div>
+        <div class="row flex-items-xs-middle flex-items-xs-center">
+
+            <!-- Pricing Solo  -->
+            <div class="col-xs-12 col-lg-3 col-md-3">
+                <div class="card text-xs-center">
+                    <div class="card-header">
+                        <h3 class="display-2"><span class="currency">$</span>00<span class="period">/month</span></h3>
+                    </div>
+                    <div class="card-block">
+                        <h4 class="card-title">
+                            Open Gym
+                        </h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">Description</li>
+                            <li class="list-group-item">Description</li>
+                            <li class="list-group-item">Description</li>
+                            <li class="list-group-item">Description</li>
+                        </ul>
+                        <a href="#" class="btn btn-gradient mt-2">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personal Training  -->
+            <div class="col-xs-12 col-lg-3 col-md-3">
+                <div class="card text-xs-center">
+                    <div class="card-header">
+                        <h3 class="display-2"><span class="currency">$</span>00<span class="period">/month</span></h3>
+                    </div>
+                    <div class="card-block">
+                        <h4 class="card-title">
+                            Personal Training
+                        </h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">Description</li>
+                            <li class="list-group-item">Description</li>
+                            <li class="list-group-item">Description</li>
+                            <li class="list-group-item">Description</li>
+                        </ul>
+                        <a href="#" class="btn btn-gradient mt-2">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Group Training  -->
+            <div class="col-xs-12 col-lg-3 col-md-3">
+                <div class="card text-xs-center">
+                    <div class="card-header">
+                        <h3 class="display-2"><span class="currency">$</span>00<span class="period">/month</span></h3>
+                    </div>
+                    <div class="card-block">
+                        <h4 class="card-title">
+                            Group Class Training
+                        </h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">Description</li>
+                            <li class="list-group-item">Description</li>
+                            <li class="list-group-item">Description</li>
+                            <li class="list-group-item">Description</li>
+                        </ul>
+                        <a href="#" class="btn btn-gradient mt-2">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <!-- School/Team Training -->
+            <div class="col-xs-12 col-lg-3 col-md-3">
+                <div class="card text-xs-center">
+                    <div class="card-header">
+                        <h3 class="display-2"><span class="currency">$</span>00<span class="period">/month</span></h3>
+                    </div>
+                    <div class="card-block">
+                        <h4 class="card-title">
+                            School Team Training
+                        </h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">Description</li>
+                            <li class="list-group-item">Description</li>
+                            <li class="list-group-item">Description</li>
+                            <li class="list-group-item">Description</li>
+                        </ul>
+                        <a href="#" class="btn btn-gradient mt-2">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    
+    
     <p>Testimonials</p>
     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
