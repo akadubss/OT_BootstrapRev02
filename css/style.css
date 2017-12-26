@@ -69,14 +69,19 @@ p1 {
 .aboutTitle {
     position: relative;
     color: white;
+   
 }
 
 .quotes {
     font-family: 'BebasNeueBook';
     font-size: 2em;
+    display: block;
+    padding: 20px;
+    
 }
 
 .Testimonials {
+    padding-top: 2em;
     padding-bottom: 2em;
 }
 
@@ -88,15 +93,19 @@ p1 {
     display: block;
 }
 
-.quotes {
-    display: block;
-    padding: 20px;
-}
-
 @media (max-width: 600px) {
+    .aboutTitle {
+         padding-top:2em;
+    }
     .MissionStatement {
         padding-left: 0;
         padding-right: 0;
+        font-size: 1.4em;
+        font-weight: 100;
+    }
+    .quotes {
+        font-size: 1.5em;
+        letter-spacing: 1;
     }
 }
 
@@ -194,6 +203,7 @@ p1 {
 }
 
 
+
 /* Nav Bar should stay static on the top of screen after the Carosel passes */
 
 .navbar {
@@ -205,6 +215,7 @@ p1 {
     font-size: 1.2em;
     border: 0;
     z-index: 999;
+    height: auto !important; 
 }
 
 .navbar-brand {
@@ -219,17 +230,18 @@ p1 {
 .navbar-inverse .navbar-nav .active a,
 .navbar-inverse .navbar-nav .active a:focus,
 .navbar-inverse .navbar-nav .active a:hover {
-    color: #000;
-    background-color: #fff;
+    color: #fff;
+    
 }
 
-.navbar-inverse .navbar-nav li a {
-    color: #D5D5D5;
+.navbar-inverse .navbar-nav .navbar-collapse li a {
+    color: #fff;
+    
 }
 
-.container-fluid {
-    margin: 7% auto;
-}
+
+
+
 
 nav {
     background: rgba(0, 0, 0, .35);
@@ -250,8 +262,11 @@ nav {
     margin-bottom: 3%;
 }
 
+
+
 .container-fluid {
-    margin-top: 2% auto;
+    margin-top: 3% auto;
+   padding-bottom: 10em;
 }
 
 
@@ -283,7 +298,10 @@ nav {
 
 @media (max-width: 600px) {
     .aaron-port {
-        padding-top: 20em;
+        padding-top: 5em;
+    }
+    .aaron_img {
+        height: 100%;
     }
 }
 
@@ -327,17 +345,21 @@ nav {
 
 /* cards and trainers*/
 
-
 #Card-Header {
-        font-family: 'BebasNeue';
+    font-family: 'BebasNeue';
     color: ;
-    font-size:5em;
+    font-size: 5em;
 }
+
 #Card-Text {
-        font-family: 'BebasNeue';
+    font-family: 'BebasNeue';
     color: white;
-    font-size:2.5em
+    font-size: 2.5em
 }
+#cardAaron {
+    padding-bottom: 2em;
+}
+
 
 /*Parallax Scene #1*/
 
@@ -369,6 +391,10 @@ nav {
     .bgc-parallax {
         padding-top: 20em;
     }
+    
+    .bgc {
+        height:100%;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -380,88 +406,157 @@ nav {
 
 /*Pricing Plans*/
 
-
-
-
 // Tables
 .card {
-  border: 0;
-  border-radius: 0px;
-  -webkit-box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.08);
-  box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.08);
-  transition: all .3s ease-in-out;
-  padding: 2.25rem 0;
-  position: relative;
-  will-change: transform;
+    border: 0;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.08);
+    transition: all .3s ease-in-out;
+    padding: 2.25rem 0;
+    position: relative;
+    will-change: transform;
+    
 }
+
 .card:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 5px;
-  background-color: #57e2b2;
-  transition: 0.5s;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background-color: #57e2b2;
+    transition: 0.5s;
 }
+
 .card:hover {
-  transform: scale(1.05);
-  -webkit-box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.08);
-  box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.08);
+    transform: scale(1.05);
+    -webkit-box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.08);
 }
+
 .card:hover:after {
-  width: 100%;
+    width: 100%;
 }
+
 .card .card-header {
-  background-color: white;
-  padding-left: 2rem;
-  border-bottom: 0px;
+    background-color: white;
+    padding-left: 2rem;
+    border-bottom: 0px;
 }
+
 .card .card-title {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
+
 .card .card-block {
-  padding-top: 0;
+    padding-top: 0;
 }
+
 .card .list-group-item {
-  border: 0px;
-  padding: .25rem;
-  color: #808080;
-  font-weight: 300;
+    border: 0px;
+    padding: .25rem;
+    color: #808080;
+    font-weight: 300;
 }
 
 .display-2 {
-  font-size: 7rem;
-  letter-spacing: -.5rem;
+    font-size: 7rem;
+    letter-spacing: -.5rem;
 }
+
 .display-2 .currency {
-  font-size: 2.75rem;
-  position: relative;
-  font-weight: 400;
-  top: -45px;
-  letter-spacing: 0px;
+    font-size: 2.75rem;
+    position: relative;
+    font-weight: 400;
+    top: -45px;
+    letter-spacing: 0px;
 }
+
 .display-2 .period {
-  font-size: 1rem;
-  color: #b3b3b3;
-  letter-spacing: 0px;
+    font-size: 1rem;
+    color: #b3b3b3;
+    letter-spacing: 0px;
 }
 
 .btn {
-  text-transform: uppercase;
-  font-size: .75rem;
-  font-weight: 500;
-  color: #a6a6a6;
-  border-radius: 0;
-  padding: .75rem 1.25rem;
-  letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: .75rem;
+    font-weight: 500;
+    color: #a6a6a6;
+    border-radius: 0;
+    padding: .75rem 1.25rem;
+    letter-spacing: 1px;
 }
 
 .btn-gradient {
-  background-color: #f2f2f2;
-  transition: background .3s ease-in-out;
+    background-color: #f2f2f2;
+    transition: background .3s ease-in-out;
 }
+
 .btn-gradient:hover {
-  color: white;
-  background-color: #57e2b2;
+    color: white;
+    background-color: #57e2b2;
+}
+
+.end-custom {
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.end-custom-caption {
+    position: relative;
+    top: 50%;
+    left: 0;
+    bottom: auto;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -5%);
+    transform: translate(0, 0%);
+}
+.super-paragraph-end {
+    font-size: 5em;
+   }
+
+
+@media (max-width: 1024px) {
+   .super-paragraph-end {
+    font-size: 4em;
+   } 
+}
+@media (max-width: 600px) {
+.super-paragraph-end {
+    font-size: 1.6em;
+   }
+}
+
+@media (max-width: 375px) {
+.super-paragraph-end {
+    font-size: 1.5em;
+   }
+}
+
+
+#Contact {
+   font-family: 'BebasNeue';
+    color: white;
+}
+footer {
+    width: 100%;
+    background-color: #0F0F0F;
+    padding: 1%;
+    color: #fff;
+    padding-bottom: 0px !important;
+}
+
+.fa {
+    padding: 25px;
+    font-size: 100px;
+    color: #fff;
+}
+
+.fa:hover {
+    color: #D5D5D5;
+    text-decoration: none;
 }
