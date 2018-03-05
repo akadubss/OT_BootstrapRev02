@@ -1,0 +1,606 @@
+@font-face {
+    font-family: 'BebasNeueBook';
+    src: url('../font/bebas-neue-book/BebasNeueBook.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../font/bebas_neue/BebasNeue.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Rage Italic';
+    src: url('../font/Rage Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Yoga Flame';
+    src: url('../font/YogaFlame/HYogaFlame-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: #0F0F0F;
+}
+
+
+/* typography*/
+
+h1 {
+    font-family: 'Yoga Flame';
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+p1 {
+    font-family: 'BebasNeue';
+    color: white;
+}
+
+.boldO {
+    font-family: 'Yoga Flame';
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+    .boldO {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 1000px) {}
+
+.MissionStatement {
+    font-family: 'BebasNeueBook';
+    font-size: 2em;
+    line-height: 1.2;
+    padding: 2em;
+    padding-left: 10em;
+    padding-right: 10em;
+    z-index: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+
+.aboutTitle {
+    position: relative;
+    color: white;
+   
+}
+
+.quotes {
+    font-family: 'BebasNeueBook';
+    font-size: 2em;
+    display: block;
+    padding: 20px;
+    
+}
+
+.Testimonials {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.personQuote {
+    display: block;
+}
+
+.block {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .aboutTitle {
+         padding-top:2em;
+    }
+    .MissionStatement {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 1.4em;
+        font-weight: 100;
+    }
+    .quotes {
+        font-size: 1.5em;
+        letter-spacing: 1;
+    }
+}
+
+@media (max-width: 1000px) {
+    .MissionStatement {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+.hero {
+    padding-bottom: 0em !important;
+}
+
+.super-heading {
+    font-size: 70px;
+}
+
+.super-paragraph {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.carousel-caption .super-paragraph a,
+.carousel-caption .super-paragraph a:hover {
+    color: #fff;
+}
+
+#carousel-example-generic {
+    margin: 40px 0;
+}
+
+.demo-content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+/* original solution by https://codepen.io/Rowno/pen/Afykb */
+
+.carousel-fade .carousel-inner .item {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+}
+
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+
+/* carousel fullscreen */
+
+.carousel-fullscreen .carousel-inner .item {
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 500px;
+    
+}
+
+@media (min-width: 960px) {
+
+
+
+@media (min-width: 1100px) {
+    .carousel-fullscreen .carousel-inner .item {
+        height: 100vh;
+        max-height: 1000px;
+    }
+    }
+}
+
+
+
+/* carousel fullscreen - vertically centered caption*/
+
+.carousel-caption {
+    
+}
+
+.carousel-fullscreen .carousel-caption {
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translate(, -0%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.3;
+    transition: all 0.2s ease-out;
+}
+
+/*About Us*/ 
+#aboutUs {
+    padding-top:10em;
+}
+
+
+/* Nav Bar should stay static on the top of screen after the Carosel passes */
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #0F0F0F;
+    color: #FFF;
+    padding: 1% 0;
+    font-size: 1.2em;
+    border: 0;
+    z-index: 999;
+    height: auto !important; 
+}
+
+.navbar-brand {
+    font-family: 'Yoga Flame';
+    font-size: 1.5em;
+    float: left;
+    min-height: 55px;
+    padding: 0 3px 3px;
+    z-index: ;
+}
+
+.navbar-inverse .navbar-nav .active a,
+.navbar-inverse .navbar-nav .active a:focus,
+.navbar-inverse .navbar-nav .active a:hover {
+    color: #fff;
+    
+}
+
+.navbar-inverse .navbar-nav .navbar-collapse li a {
+    color: #fff;
+    
+}
+
+
+
+
+
+nav {
+    background: rgba(0, 0, 0, .35);
+    position: relative;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    margin-bottom: -50px;
+    padding: 5px 0;
+    transition: box-shadow 0.5s ease;
+}
+
+.navScrolled {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 1px 5px #000;
+    margin-bottom: 3%;
+}
+
+
+
+.container-fluid {
+    margin-top: 3% auto;
+   padding-bottom: 10em;
+}
+
+
+/*Parallax Scene #1*/
+
+.aaron-port {
+    padding-top: 40em;
+    color: #fff;
+    background-color: #0000;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 100% 0;
+}
+
+.aaron_img {
+    background: url(../img/Dyna_2.jpg) no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 185%;
+    top: 0;
+    z-index: 0;
+    opacity: 0.7;
+}
+
+
+/*Parallax Scene #1 Media Queries*/
+
+@media (max-width: 600px) {
+    .aaron-port {
+        padding-top: 5em;
+    }
+    .aaron_img {
+        height: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .aaron-port {
+        padding-top: 30em;
+    }
+}
+
+
+/*Trainer Modal Pop Up*/
+
+.modal-content {
+    background-color: #0F0F0F;
+}
+
+.modal-footer {
+    border-top: 0;
+}
+
+.close {
+    color: #fff;
+}
+
+.modal-title {
+    font-family: 'BebasNeue';
+    letter-spacing: 2px;
+}
+
+#about-aaron {
+    font-family: 'BebasNeue';
+    letter-spacing: 2px;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+#Aaron_img {
+    padding-top: 5em;
+}
+
+
+/* cards and trainers*/
+
+#Card-Header {
+    font-family: 'BebasNeue';
+    color: ;
+    font-size: 5em;
+}
+
+#Card-Text {
+    font-family: 'BebasNeue';
+    color: white;
+    font-size: 2.5em
+}
+#cardAaron {
+    padding-bottom: 2em;
+}
+
+
+/*Parallax Scene #1*/
+
+.bgc-parallax {
+    padding-top: 40em;
+    color: #fff;
+    background-color: #0000;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 100% 0;
+}
+
+.bgc {
+    background: url(../img/Dyna.jpg) no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 185%;
+    top: 0;
+    z-index: 0;
+    opacity: 0.7;
+}
+
+
+/*Parallax Scene #1 Media Queries*/
+
+@media (max-width: 600px) {
+    .bgc-parallax {
+        padding-top: 20em;
+    }
+    
+    .bgc {
+        height:100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .bgc-parallax {
+        padding-top: 30em;
+    }
+}
+
+
+/*Pricing Plans*/
+
+// Tables
+.card {
+    border: 0;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.08);
+    transition: all .3s ease-in-out;
+    padding: 2.25rem 0;
+    position: relative;
+    will-change: transform;
+    height: 10px;
+}
+
+.card:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background-color: #5e0012;
+    transition: 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    -webkit-box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.08);
+}
+
+.card:hover:after {
+    width: 100%;
+}
+
+.card .card-header {
+    background-color: white;
+    padding-left: 2rem;
+    border-bottom: 0px;
+}
+
+.card .card-title {
+    margin-bottom: 1rem;
+}
+
+.card .card-block {
+    padding-top: 0;
+}
+
+.card .list-group-item {
+    border: 0px;
+    padding: .25rem;
+    color: #808080;
+    font-weight: 300;
+}
+
+.display-2 {
+    font-size: 7rem;
+    letter-spacing: -.5rem;
+}
+
+.display-2 .currency {
+    font-size: 2.75rem;
+    position: relative;
+    font-weight: 400;
+    top: -45px;
+    letter-spacing: 0px;
+}
+
+.display-2 .period {
+    font-size: 1rem;
+    color: #b3b3b3;
+    letter-spacing: 0px;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-size: .75rem;
+    font-weight: 500;
+    color: #a6a6a6;
+    border-radius: 0;
+    padding: .75rem 1.25rem;
+    letter-spacing: 1px;
+}
+
+.btn-gradient {
+    background-color: #f2f2f2;
+    transition: background .3s ease-in-out;
+}
+
+.btn-gradient:hover {
+    color: white;
+    background-color: #5e0012;
+}
+
+.end-custom {
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 600px;
+}
+.end-custom-caption {
+    position: relative;
+    top: 50%;
+    left: 0;
+    bottom: auto;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -5%);
+    transform: translate(0, 0%);
+}
+.super-paragraph-end {
+    font-size: 5em;
+   }
+
+#serviceCards {
+    
+}
+
+#card-aaron-block {
+    height: 10em;
+}
+.card-block {
+    height: 22em
+}
+
+@media (min-width: 960px) {
+    .end-custom {
+        max-height: 800px;
+    }
+    
+}
+
+
+@media (max-width: 1024px) {
+   .super-paragraph-end {
+    font-size: 4em;
+   } 
+}
+
+
+@media (max-width: 375px) {
+.super-paragraph-end {
+    font-size: 1.5em;
+   }
+}
+
+
+#Contact {
+   font-family: 'BebasNeue';
+    color: white;
+}
+footer {
+    width: 100%;
+    background-color: #0F0F0F;
+    padding: 1%;
+    color: #fff;
+    padding-bottom: 0px !important;
+}
+
+.fa {
+    padding: 25px;
+    font-size: 100px;
+    color: #fff;
+}
+
+.fa:hover {
+    color: #D5D5D5;
+    text-decoration: none;
+}
