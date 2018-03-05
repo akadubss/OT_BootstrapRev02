@@ -116,6 +116,11 @@ p1 {
     }
 }
 
+
+.hero {
+    padding-bottom: 0em !important;
+}
+
 .super-heading {
     font-size: 70px;
 }
@@ -180,6 +185,8 @@ p1 {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    max-height: 1000px;
+    
 }
 
 
@@ -193,6 +200,7 @@ p1 {
     transform: translate(0, -50%);
 }
 
+
 .overlay {
     position: absolute;
     width: 100%;
@@ -202,6 +210,10 @@ p1 {
     transition: all 0.2s ease-out;
 }
 
+/*About Us*/ 
+#aboutUs {
+    padding-top:10em;
+}
 
 
 /* Nav Bar should stay static on the top of screen after the Carosel passes */
@@ -426,7 +438,7 @@ nav {
     left: 0;
     width: 0%;
     height: 5px;
-    background-color: #57e2b2;
+    background-color: #5e0012;
     transition: 0.5s;
 }
 
@@ -497,7 +509,7 @@ nav {
 
 .btn-gradient:hover {
     color: white;
-    background-color: #57e2b2;
+    background-color: #5e0012;
 }
 
 .end-custom {
@@ -505,6 +517,7 @@ nav {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    max-height: 600px;
 }
 .end-custom-caption {
     position: relative;
@@ -519,17 +532,20 @@ nav {
     font-size: 5em;
    }
 
+@media (min-width: 960px) {
+    .end-custom {
+        max-height: 800px;
+    }
+    
+}
+
 
 @media (max-width: 1024px) {
    .super-paragraph-end {
     font-size: 4em;
    } 
 }
-@media (max-width: 600px) {
-.super-paragraph-end {
-    font-size: 1.6em;
-   }
-}
+
 
 @media (max-width: 375px) {
 .super-paragraph-end {
