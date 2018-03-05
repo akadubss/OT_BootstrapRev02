@@ -1,5 +1,5 @@
 var navBar = $(".navbar");
-var hdrHeight = $("#myCarousel").height();
+var hdrHeight = $(".carousel-fullscreen").height();
 
 $(window).scroll(function() {
   if( $(this).scrollTop() > hdrHeight) {
