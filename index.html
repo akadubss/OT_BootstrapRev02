@@ -27,55 +27,55 @@
 </head>
 
 <body>
-  <!---Hero Start End--->
-
-   
-   <div class="hero container-fluid">
-    <div id="myCarousel" class="carousel slide carousel-fullscreen carousel-fade" data-ride="carousel">
+    <!---Hero Start End--->
 
 
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
+    <div class="hero container-fluid">
+        <div id="myCarousel" class="carousel slide carousel-fullscreen carousel-fade" data-ride="carousel">
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active" style="background-image: url('img/Aaron_John.jpg');">
-                <div class="overlay"></div>
-                <div class="carousel-caption">
-                    <h1 class="super-heading">Olympus Training</h1>
-                    <p class="super-paragraph">Never waste a moment of motivation.</p>
+
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active" style="background-image: url('img/Aaron_John.jpg');">
+                    <div class="overlay"></div>
+                    <div class="carousel-caption">
+                        <h1 class="super-heading">Olympus Training</h1>
+                        <p class="super-paragraph">Never waste a moment of motivation.</p>
+                    </div>
+                </div>
+
+                <div class="item" style="background-image: url('img/Aaron_Squat.jpg');">
+                    <div class="overlay"></div>
+
+                </div>
+
+                <div class="item" style="background-image: url('img/Sam.jpg');">
+                    <div class="overlay"></div>
                 </div>
             </div>
 
-            <div class="item" style="background-image: url('img/Aaron_Squat.jpg');">
-                <div class="overlay"></div>
-
-            </div>
-
-            <div class="item" style="background-image: url('img/Sam.jpg');">
-                <div class="overlay"></div>
-            </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <!-- Controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
+        </div>
+
     </div>
 
-   </div>
-   
-   <!---Hero End--->
-   
+    <!---Hero End--->
+
     <nav class='navbar navbar-default '>
         <div class='container'>
             <div class='navbar-header'>
@@ -135,9 +135,9 @@
                 <!-- Card -->
                 <div class="card animated fadeInLeft  border-white text-xs-center">
                     <img class="card-img-top img-responsive center-block" src="img/Aaron_cage_2.jpg" alt="Deer in nature" />
-                    <div class="card-block border-white">
-                        <h4 id="Card-Header" class="card-title text-center">Meet the Trainer</h4>
-                        <h6 id="Card-Text" class="text-muted text-center">Aaron Smith</h6>
+                    <div id="card-aaron-block" class="card-block border-white">
+                        <h4 id="Card-Header" class="card-title text-center"></h4>
+                        <h4 id="Card-Header" class="text-muted text-center">Aaron Smith</h4>
                         <!-- Trigger the modal with a button -->
                         <button type="button" class="btn  btn-lg center-block" data-toggle="modal" data-target="#myModal">Biography</button>
                     </div>
@@ -164,9 +164,9 @@
                     </div>
                     <div class="modal-body">
                         <div class="row">
-                            <div id="Aaron_img" class="col-sm-6 "> <img src="img/Aaron_Hero.jpg" class="img-responsive">
+                            <div id="Aaron_img" class="col-sm-12 "> <img src="img/Aaron_Hero.jpg" class="img-responsive">
                             </div>
-                            <div id="about-aaron" class="col-sm-6  ">
+                            <div id="about-aaron" class="col-sm-12  ">
                                 <h4 class="text-center">Aaron Smith</h4>
                                 <h4 class="text-center">Fitness Coach</h4>
                                 <p4>Over the last 8 years, I have dedicated most of my time towards teaching others how to become the strongest version of themselves, both mentally and physically. I believe very strongly that the body follows the mind and I encourage anyone who is looking to make a life change to embrace this and become the person they are meant to be.</p4>
@@ -214,7 +214,7 @@
                             <li class="list-group-item">The ablity to use our gym equipment, but with your program </li>
                             <li class="list-group-item">The trainer will be on site during that time to ensure the safety of everyone in the gym</li>
                         </ul>
-                        <a href="#" class="btn btn-gradient mt-2">Contact Us</a>
+                        <button type="button" class="btn  btn-lg center-block tn-gradient mt-2" data-toggle="modal" data-target="#myContact">Contact us</button>
                     </div>
                 </div>
             </div>
@@ -234,14 +234,14 @@
                             <li class="list-group-item">Standard 8-12 week program</li>
                             <li class="list-group-item"></li>
                         </ul>
-                        <a href="#" class="btn btn-gradient mt-2">Contact Us</a>
+                                <button type="button" class="btn  btn-lg center-block tn-gradient mt-2" data-toggle="modal" data-target="#myContact">Contact us</button>
                     </div>
                 </div>
             </div>
 
 
             <!-- Group Training  -->
-            <div class="col-xs-12 col-lg-3 col-md-3">
+            <div id="serviceCards" class="col-xs-12 col-lg-3 col-md-3">
                 <div class="card text-xs-center">
                     <div class="card-header">
                     </div>
@@ -253,7 +253,7 @@
                             <li class="list-group-item">If you are looking for a personalized program, one on one coaching is for you. Each program is designed to meet the needs of the individual based on their goals and current fitness level</li>
 
                         </ul>
-                        <a href="#" class="btn btn-gradient mt-2">Contact Us</a>
+                              <button type="button" class="btn  btn-lg center-block tn-gradient mt-2" data-toggle="modal" data-target="#myContact">Contact us</button>
                     </div>
                 </div>
             </div>
@@ -271,13 +271,47 @@
                             <li class="list-group-item">Train with a small group and still receive quality one on one coaching. During group sessions you will be instructed on how to properly perform the big 3 lifts </li>
                             <li class="list-group-item">1 Hourr Training Session</li>
                         </ul>
-                        <a href="#" class="btn btn-gradient mt-2">Contact Us</a>
+                               <button type="button" class="btn  btn-lg center-block tn-gradient mt-2" data-toggle="modal" data-target="#myContact">Contact us</button>
                     </div>
                 </div>
             </div>
 
         </div>
     </div>
+    
+    
+    <!-- Modal Starts -->
+    <div class="container">
+
+        <!-- Modal -->
+        <div class="modal fade" id="myContact" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title text-center">Contact Us</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div id="about-aaron" class="col-sm-12  ">
+                                <h4 class="text-center">802.N Mulberry Elizabethtown, Ky </h4>
+                                <h4 class="text-center">Olympustraining.ky@gmail.com  </h4>
+                                <h4 class="text-center"> Tel:270.986.7933   </h4>
+                               
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-gradient mt-2" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="container-fluid">
         <div class="row">

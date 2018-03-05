@@ -189,13 +189,33 @@ p1 {
     
 }
 
+@media (min-width: 960px) {
+    .carousel-fullscreen .carousel-inner .item {
+        max-height: 760px;
+    }
+}
+
+
+@media (min-width: 1100px) {
+    .carousel-fullscreen .carousel-inner .item {
+        height: 100vh;
+        max-height: 1000px;
+    }
+    }
+}
+
+
 
 /* carousel fullscreen - vertically centered caption*/
+
+.carousel-caption {
+    
+}
 
 .carousel-fullscreen .carousel-caption {
     top: 50%;
     bottom: auto;
-    -webkit-transform: translate(0, -50%);
+    -webkit-transform: translate(, -0%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
 }
@@ -428,7 +448,7 @@ nav {
     padding: 2.25rem 0;
     position: relative;
     will-change: transform;
-    
+    height: 10px;
 }
 
 .card:after {
@@ -531,6 +551,17 @@ nav {
 .super-paragraph-end {
     font-size: 5em;
    }
+
+#serviceCards {
+    
+}
+
+#card-aaron-block {
+    height: 10em;
+}
+.card-block {
+    height: 22em
+}
 
 @media (min-width: 960px) {
     .end-custom {
