@@ -119,6 +119,11 @@ p1 {
 
 .hero {
     padding-bottom: 0em !important;
+        width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0;
 }
 
 .super-heading {
@@ -186,11 +191,18 @@ p1 {
     background-repeat: no-repeat;
     background-size: cover;
     max-height: 500px;
+    width: auto;
     
 }
 
 
 
+@media screen and (min-width: 350px) {
+    .carousel-fullscreen .carousel-inner .item {
+        height: 15vh;
+    }
+
+}
 
 @media (min-width: 1100px) {
     .carousel-fullscreen .carousel-inner .item {
